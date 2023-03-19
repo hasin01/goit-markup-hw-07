@@ -15,7 +15,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
   </head>
   <body>
     <header class="header-lin">
@@ -26,12 +29,10 @@
           >
           <ul class="site-nav">
             <li class="site-nav-item">
-              <a class="nav-link link" href="./index.html">Studio</a>
+              <a class="nav-link link " href="./index.html">Studio</a>
             </li>
-            <li class="site-nav-item">
-              <a class="nav-link link current" href="./portfolio.html"
-                >Portfolio</a
-              >
+            <li class="site-nav-item ">
+              <a class="nav-link link current" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="site-nav-item">
               <a class="nav-link link" href="">Contacts</a>
@@ -42,8 +43,8 @@
           <ul class="address-list">
             <li class="address-item">
               <a class="address-link" href="mailto:info@devstudio.com"
-                >info@devstudio.com
-              </a>
+                >info@devstudio.com</a
+              >
             </li>
             <li class="address-item">
               <a class="address-link" href="tel:+110001111111"
@@ -52,6 +53,84 @@
             </li>
           </ul>
         </address>
+      </div>
+      <div class="header-mobail container">
+        <a class="mob-logo" href="./index.html">
+          <span class="logo-web">Web</span>Studio</a
+        >
+        <button type="button" class="menu-open-btn" data-mobile-open>
+          <svg class="menu-open-icon">
+            <use href="./img/icons.svg#menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mob-menu is-hidden container" data-mobile>
+        <div class="btn-close-mob">
+          <button type="button" class="btn-close-mob-menu" data-mobile-close>
+            <svg class="mob-menu-close icon-modal" width="8" height="8">
+              <use href="./img/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="mob-item-nav">
+          <ul class="mob-nav">
+            <li class="mob-nav-item">
+              <a class="mob-link link" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="mob-nav-item ">
+              <a class="mob-link link current-mob" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="mob-nav-item ">
+              <a class="mob-link link" href="">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mob-item-nav">
+          <address class="mob-address">
+            <ul class="mob-address-list">
+              <li class="mob-address-item-tel">
+                <a class="mob-address-tel" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mob-address-item-mail">
+                <a class="mob-address-mail" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mob-messenger-list">
+              <li class="mob-messenger-item">
+                <a href="#" class="mob-messenger-link">
+                  <svg class="icon-facebook" width="24" height="24">
+                    <use href="./img/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-messenger-item">
+                <a href="#" class="mob-messenger-link">
+                  <svg class="icon-facebook" width="24" height="24">
+                    <use href="./img/icons.svg#icon-twitter-1"></use></svg
+                ></a>
+              </li>
+              <li class="mob-messenger-item">
+                <a href="#" class="mob-messenger-link">
+                  <svg class="icon-facebook" width="24" height="24">
+                    <use href="./img/icons.svg#icon-facebook"></use></svg
+                ></a>
+              </li>
+              <li class="mob-messenger-item">
+                <a href="#" class="mob-messenger-link">
+                  <svg class="icon-facebook" width="24" height="24">
+                    <use href="./img/icons.svg#icon-linkedin"></use></svg
+                ></a>
+              </li>
+            </ul>
+          </address>
+        </div>
       </div>
     </header>
     <main class="main">
@@ -81,7 +160,7 @@
               <div class="photo-wrap">
                 <img
                   class="phortfolio-photo"
-                  src="./images/bankingapp.jpg"
+                  src="./img/bankingapp.jpg"
                   alt="Banking App Interface Concept"
                   width="360"
                 />
@@ -100,7 +179,7 @@
               <div class="photo-wrap">
                 <img
                   class="phortfolio-photo"
-                  src="./images/cashlesspayment.jpg"
+                  src="./img/cashlesspayment.jpg"
                   alt="Cashless Payment"
                   width="360"
                 />
@@ -119,7 +198,7 @@
               <div class="photo-wrap">
                 <img
                   class="phortfolio-photo"
-                  src="./images/meditaionapp.jpg"
+                  src="./img/meditaionapp.jpg"
                   alt="Meditaion App"
                   width="360"
                 />
@@ -138,7 +217,7 @@
               <div class="photo-wrap">
                 <img
                   class="phortfolio-photo"
-                  src="./images/taxiservice.jpg"
+                  src="./img/taxiservice.jpg"
                   alt="Taxi Service"
                   width="360"
                 />
@@ -157,7 +236,7 @@
               <div class="photo-wrap">
                 <img
                   class="phortfolio-photo"
-                  src="./images/screenillustrations.jpg"
+                  src="./img/screenillustrations.jpg"
                   alt="Screen Illustrations"
                   width="360"
                 />
@@ -178,7 +257,7 @@
               <div class="photo-wrap">
                 <img
                   class="phortfolio-photo"
-                  src="./images/onlinecourses.jpg"
+                  src="./img/onlinecourses.jpg"
                   alt="Online Courses"
                   width="360"
                 />
@@ -197,7 +276,7 @@
               <div class="photo-wrap">
                 <img
                   class="phortfolio-photo"
-                  src="./images/instagramstoriesconcept.jpg"
+                  src="./img/instagramstoriesconcept.jpg"
                   alt="Instagram Stories Concept"
                   width="360"
                 />
@@ -218,7 +297,7 @@
               <div class="photo-wrap">
                 <img
                   class="phortfolio-photo"
-                  src="./images/organicfood.jpg"
+                  src="./img/organicfood.jpg"
                   alt="Organic Food"
                   width="360"
                 />
@@ -238,7 +317,7 @@
               <div class="photo-wrap">
                 <img
                   class="phortfolio-photo"
-                  src="./images/freshcoffee.jpg  "
+                  src="./img/freshcoffee.jpg  "
                   alt="Fresh Coffee"
                   width="360"
                 />
@@ -274,26 +353,26 @@
             <li class="messenger-footer-item">
               <a href="" class="messenger-footer-link">
                 <svg class="icon-footer" width="24" height="24">
-                  <use href="./images/icons.svg#icon-instagram"></use>
+                  <use href="./img/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="messenger-footer-item">
               <a href="" class="messenger-footer-link">
                 <svg class="icon-footer" width="24" height="24">
-                  <use href="./images/icons.svg#icon-twitter-1"></use></svg
+                  <use href="./img/icons.svg#icon-twitter-1"></use></svg
               ></a>
             </li>
             <li class="messenger-footer-item">
               <a href="" class="messenger-footer-link">
                 <svg class="icon-footer" width="24" height="24">
-                  <use href="./images/icons.svg#icon-facebook"></use></svg
+                  <use href="./img/icons.svg#icon-facebook"></use></svg
               ></a>
             </li>
             <li class="messenger-footer-item">
               <a href="" class="messenger-footer-link">
                 <svg class="icon-footer" width="24" height="24">
-                  <use href="./images/icons.svg#icon-linkedin"></use></svg
+                  <use href="./img/icons.svg#icon-linkedin"></use></svg
               ></a>
             </li>
           </ul>
@@ -311,12 +390,13 @@
             <button class="btn-footer-form" type="submit">
               Subscribe
               <svg class="icon-footer-form" width="24" height="24">
-                <use href="./images/icons.svg#icon-send"></use>
+                <use href="./img/icons.svg#icon-send"></use>
               </svg>
             </button>
           </form>
         </div>
       </div>
     </footer>
+    <script src="./js/mobile.js"></script>
   </body>
 </html>

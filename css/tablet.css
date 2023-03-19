@@ -6,26 +6,26 @@
     margin-left: auto;
     padding: 0 15px;
   }
-.hero-secrion{
-  background-image: linear-gradient(
-    0deg,
-    rgba(46, 47, 66, 0.7),
-    rgba(46, 47, 66, 0.7)
-  ),
-  url(../img/hero/hero-bg-tab.jpg);
-}
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-.hero {
-  background-image: linear-gradient(
-      0deg,
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../img/hero/hero-bg-tab-2x.jpg);
-}
-}
+  .hero-secrion {
+    background-image: linear-gradient(
+        0deg,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../img/hero/hero-bg-tab.jpg);
+  }
+  @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-width: 768px) and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-width: 768px) and (min-resolution: 2dppx) and (min-width: 768px) {
+    .hero {
+      background-image: linear-gradient(
+          0deg,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../img/hero/hero-bg-tab-2x.jpg);
+    }
+  }
   .header-mobail {
     display: none;
   }
@@ -111,6 +111,13 @@
     font-size: 56px;
     line-height: 1.07;
   }
+  .company-list {
+    column-gap: 24px;
+  }
+  .company-item {
+  width: 168px;
+  height: 88px;
+}
   /* Section Futures */
   .futures-list {
     flex-direction: row;
@@ -160,4 +167,5 @@
   .footer-title-form {
     text-align: start;
   }
+
 }
