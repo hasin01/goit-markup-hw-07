@@ -1,0 +1,163 @@
+@media screen and (min-width: 768px) {
+  .container {
+    width: 100%;
+    max-width: 768px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 15px;
+  }
+.hero-secrion{
+  background-image: linear-gradient(
+    0deg,
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)
+  ),
+  url(../img/hero/hero-bg-tab.jpg);
+}
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+.hero {
+  background-image: linear-gradient(
+      0deg,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../img/hero/hero-bg-tab-2x.jpg);
+}
+}
+  .header-mobail {
+    display: none;
+  }
+  .header-lin {
+    border-bottom: 1px solid var(--btn-background-color);
+  }
+  .header {
+    display: flex;
+    align-items: center;
+  }
+  .modal {
+    width: 408px;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+  }
+  .site-nav {
+    display: flex;
+    margin-right: 121px;
+  }
+  .address-list {
+    display: block;
+  }
+  .site-nav-item:not(:last-child) {
+    margin-right: 40px;
+  }
+  .address {
+    margin-left: auto;
+  }
+
+  .logo {
+    margin-right: 119px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.3;
+    color: var(--primary-text-color);
+    text-transform: uppercase;
+  }
+
+  /* Nav */
+  .nav-link {
+    display: block;
+    padding: 24px 0;
+    font-weight: 500;
+    color: var(--primary-text-color);
+    position: relative;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .current::after {
+    content: "";
+    position: absolute;
+    background: #404bbf;
+    border-radius: 2px;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    bottom: -1px;
+  }
+  .nav-link.current,
+  .nav-link:hover,
+  .nav-link:focus {
+    color: var(--text-hover-header);
+  }
+  .address-link {
+    font-size: 12px;
+    font-style: normal;
+    color: var(--address-text-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .address-link:hover,
+  .address-link:focus {
+    color: var(--text-hover-header);
+  }
+  .hero-title {
+    max-width: 496px;
+    margin-bottom: 36px;
+    font-size: 56px;
+    line-height: 1.07;
+  }
+  /* Section Futures */
+  .futures-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .futures-subtitle {
+    text-align: start;
+  }
+  .futures-list-item {
+    width: 356px;
+  }
+  /* Our Team */
+
+  .workers-list {
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+  .logo-footer {
+    text-align: start;
+  }
+  .group-input {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .input-form-footer {
+    width: 264px;
+    margin-right: 24px;
+    margin-bottom: 0;
+  }
+  .footer-flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    padding-left: 108px;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+
+  .footer-icon-title {
+    text-align: start;
+    margin-top: 0;
+  }
+  .footer-title-form {
+    text-align: start;
+  }
+}
