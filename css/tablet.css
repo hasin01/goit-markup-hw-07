@@ -167,5 +167,11 @@
   .footer-title-form {
     text-align: start;
   }
+  .mob-address-tel{
+    font-style: normal;
+  }
+  .mob-address-mail {
+    font-style: normal;
+  }
 
 }

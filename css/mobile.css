@@ -111,12 +111,14 @@
   margin-bottom: 48px;
 }
 .mob-address-mail {
+  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   color: var(--address-text-color);
 }
 .mob-address-tel {
+  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -784,6 +786,9 @@
   }
   .mob-address-tel{
     font-size: 24px;
+    font-style: normal;
+  }
+  .mob-address-mail {
     font-style: normal;
   }
   .mob-messenger-list{
